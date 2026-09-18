@@ -21,7 +21,7 @@ export default function SiteFooter({ className = "" }: { className?: string }) {
         <strong>Company</strong>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
-        <span>Privacy Policy — pending final review</span>
+        <Link href="/privacy">Privacy information</Link>
       </div>
       <div>
         <strong>Product</strong>

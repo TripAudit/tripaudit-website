@@ -7,6 +7,7 @@ const routes = [
   "/about",
   "/faq",
   "/contact",
+  "/privacy",
   "/insights",
   "/insights/how-to-review-a-travel-itinerary-before-sending",
   "/insights/10-common-itinerary-problems",
