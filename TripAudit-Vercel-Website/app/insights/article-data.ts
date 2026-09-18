@@ -4,7 +4,7 @@ export type Article = { title: string; seoTitle: string; description: string; ca
 export const articles: Record<string, Article> = {
   "how-to-review-a-travel-itinerary-before-sending": {
     title: "How to Review a Travel Itinerary Before Sending It to a Client",
-    seoTitle: "How to Review a Travel Itinerary Before Sending It | TripAudit",
+    seoTitle: "How to Review a Travel Itinerary Before Sending It | TourAudit",
     description: "A practical pre-send itinerary review process for travel consultants covering trip flow, timings, hotels, transfers, traveller needs and client expectations.",
     category: "Quality control", readTime: "7 min read",
     intro: ["An itinerary can be accurate and still create problems for the traveller. The hotel may be confirmed, the sightseeing may exist and the transfer may be bookable, but the trip can still feel rushed, confusing or different from what the client expected.", "That is why the final review should be more than proofreading. It should test whether the itinerary works as a complete journey. A concern found before sending may take five minutes to correct; the same concern discovered during the trip can require explanations, amendments and emergency coordination."],
@@ -20,12 +20,12 @@ export const articles: Record<string, Article> = {
       { heading: "9. Check inclusions and expectations", paragraphs: ["Clarify guides, vehicles, tickets, meals, transfers, waiting time, porterage, taxes, free time, optional activities and walking limitations. Many complaints begin with a difference between what the consultant meant and what the client understood."] },
       { heading: "10. Complete a final consistency pass", paragraphs: ["Recheck dates, day numbers, city names, traveller and room counts, nights, transport sectors, repeated activities, contradictory inclusions and copy-and-paste remnants. Then test whether promises such as relaxed, family-friendly, luxury or accessible are supported by the daily plan."] },
       { heading: "A simple pre-send question", paragraphs: ["If I were the traveller, what part of this itinerary would I question, misunderstand or struggle to complete? That question shifts the review from document accuracy to travel reality."] },
-      { heading: "Add a structured second check", paragraphs: ["TripAudit helps travel consultants review itineraries for potential planning conflicts, operational gaps and missing information before they reach the client. It supports the consultant’s final review; it does not replace destination knowledge or live operational verification."] }
+      { heading: "Add a structured second check", paragraphs: ["TourAudit helps travel consultants review itineraries for potential planning conflicts, operational gaps and missing information before they reach the client. It supports the consultant’s final review; it does not replace destination knowledge or live operational verification."] }
     ]
   },
   "10-common-itinerary-problems": {
     title: "10 Common Itinerary Problems Travel Consultants Should Check",
-    seoTitle: "10 Common Travel Itinerary Problems to Check | TripAudit",
+    seoTitle: "10 Common Travel Itinerary Problems to Check | TourAudit",
     description: "Check these 10 common itinerary problems before sending a proposal, from night-count mismatches and poor routing to hotel location and unrealistic first days.",
     category: "Checklist", readTime: "6 min read",
     intro: ["Most itinerary problems are not dramatic errors. They are small gaps between services, timings and expectations. Each component may look acceptable on its own, yet the complete trip may not work smoothly.", "Here are ten problems worth checking before an itinerary reaches the client."],
@@ -41,12 +41,12 @@ export const articles: Record<string, Article> = {
       { heading: "9. Transport passes do not match", paragraphs: ["A pass may not cover every day, route, reservation or service. Check validity, activation, compulsory reservations and excluded services."] },
       { heading: "10. The wording creates the wrong expectation", paragraphs: ["Words such as luxury, easy, nearby, private, guided and at leisure can mean different things to consultant and client. Explain the real scope and limitations before travel."] },
       { heading: "Why these problems survive proofreading", paragraphs: ["Proofreading finds spelling and formatting errors. Operational review asks what happens between services, whether the traveller has enough time, what assumptions remain unwritten and which detail could create a complaint."] },
-      { heading: "A practical final review", paragraphs: ["Check the trip at three levels: structure (days, nights, cities, hotels and transport), flow (timing, movement, workload and usable time), and expectations (inclusions, limitations and traveller needs). TripAudit provides a structured second check; the consultant remains responsible for live verification and the final decision."] }
+      { heading: "A practical final review", paragraphs: ["Check the trip at three levels: structure (days, nights, cities, hotels and transport), flow (timing, movement, workload and usable time), and expectations (inclusions, limitations and traveller needs). TourAudit provides a structured second check; the consultant remains responsible for live verification and the final decision."] }
     ]
   },
   "why-correct-itineraries-can-be-impractical": {
     title: "Why a Correct Itinerary Can Still Be Impractical",
-    seoTitle: "Why a Correct Travel Itinerary Can Be Impractical | TripAudit",
+    seoTitle: "Why a Correct Travel Itinerary Can Be Impractical | TourAudit",
     description: "A travel itinerary can be technically accurate but operationally weak. Learn how pace, transfers, walking, timing and expectations affect real trip quality.",
     category: "Trip design", readTime: "5 min read",
     intro: ["Every hotel exists. Every attraction is open. Every train can be booked. The number of nights is correct. And yet the itinerary may still be a poor plan.", "Technical correctness confirms that the listed components are valid. Practicality asks whether a real traveller can complete them comfortably, in sequence and under normal travel conditions."],
@@ -59,7 +59,7 @@ export const articles: Record<string, Article> = {
       { heading: "Hotel quality does not correct poor location", paragraphs: ["A well-rated hotel can weaken the itinerary if its location creates long daily transfers. Consider activity locations, early starts, late returns, local transport, luggage access and vehicle restrictions."] },
       { heading: "The plan may not match the client promise", paragraphs: ["If a trip is sold as relaxed, luxury, accessible or senior-friendly, the services and daily programme must support that promise. Vague assurances are not enough."] },
       { heading: "Operational knowledge has a time limit", paragraphs: ["Strikes, closures, maintenance, weather and overcrowding can change after a proposal is prepared. Separate what is known and included, what is normally expected and what must be reconfirmed closer to travel."] },
-      { heading: "A better practicality test", bullets: ["Is the sequence sensible?", "Is there enough time around each service?", "Does the effort suit these travellers?", "Is there flexibility when something runs late?", "Does the programme match the holiday promise?", "Have important limitations been explained?"], paragraphs: ["A strong itinerary offers smooth flow, realistic breaks and correct expectations. TripAudit helps identify potential conflicts, operational gaps and missing information; its findings support—not replace—the consultant’s current knowledge and professional judgement."] }
+      { heading: "A better practicality test", bullets: ["Is the sequence sensible?", "Is there enough time around each service?", "Does the effort suit these travellers?", "Is there flexibility when something runs late?", "Does the programme match the holiday promise?", "Have important limitations been explained?"], paragraphs: ["A strong itinerary offers smooth flow, realistic breaks and correct expectations. TourAudit helps identify potential conflicts, operational gaps and missing information; its findings support—not replace—the consultant’s current knowledge and professional judgement."] }
     ]
   }
 };
