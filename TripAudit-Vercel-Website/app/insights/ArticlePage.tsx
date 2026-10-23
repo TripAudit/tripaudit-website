@@ -1,19 +1,40 @@
 import Link from "next/link";
 import type { Article } from "./article-data";
+import { formatPublishDate } from "./publication";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
 export default function ArticlePage({ article }: { article: Article }) {
+  const publishDate = formatPublishDate(article.publishDate);
+
   return <main className="article-page">
     <SiteHeader />
     <article>
-      <div className="article-hero"><Link className="back-link" href="/insights">← All insights</Link><p className="eyebrow">{article.category} · {article.readTime}</p><h1>{article.title}</h1><p className="article-deck">{article.description}</p></div>
+      <div className="article-hero">
+        <Link className="back-link" href="/insights">← All insights</Link>
+        <p className="eyebrow">{article.category} · {article.readTime}{publishDate ? ` · ${publishDate}` : ""}</p>
+        <h1>{article.title}</h1>
+        <p className="article-deck">{article.description}</p>
+      </div>
       <div className="article-body">
         {article.intro.map((p) => <p className="article-intro" key={p}>{p}</p>)}
-        {article.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((p)=><p key={p}>{p}</p>)}{section.bullets && <ul>{section.bullets.map((item)=><li key={item}>{item}</li>)}</ul>}</section>)}
-        <aside className="article-cta"><p className="eyebrow">Review before you send</p><h2>Add a structured second check to your workflow.</h2><p>TourAudit helps surface potential gaps, conflicts and practical concerns while destination knowledge, live verification and professional judgment stay with you.</p><a className="button" href="https://app.touraudit.com">Review an itinerary <span aria-hidden="true">→</span></a></aside>
+        {article.sections.map((section) => <section key={section.heading}>
+          <h2>{section.heading}</h2>
+          {section.paragraphs?.map((p) => <p key={p}>{p}</p>)}
+          {section.bullets && <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+        </section>)}
+        {article.related && <nav className="related-reading" aria-label="Related reading">
+          <h2>Related reading</h2>
+          {article.related.map((item) => <Link key={item.href} href={item.href}>{item.label} →</Link>)}
+        </nav>}
+        <aside className="article-cta">
+          <p className="eyebrow">Review before you send</p>
+          <h2>Add a structured second check to your workflow.</h2>
+          <p>TourAudit helps surface potential gaps, conflicts and practical concerns while destination knowledge, live verification and professional judgment stay with you.</p>
+          <a className="button" href="https://app.touraudit.com">Review an itinerary <span aria-hidden="true">→</span></a>
+        </aside>
       </div>
     </article>
     <SiteFooter className="article-footer" />
-  </main>
+  </main>;
 }
