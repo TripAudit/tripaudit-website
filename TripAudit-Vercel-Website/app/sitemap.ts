@@ -1,4 +1,8 @@
 import type { MetadataRoute } from "next";
+import { articles } from "./insights/article-data";
+import { isArticlePublished } from "./insights/publication";
+
+export const dynamic = "force-dynamic";
 
 const routes = [
   "",
@@ -9,11 +13,16 @@ const routes = [
   "/contact",
   "/privacy",
   "/insights",
-  "/insights/how-to-review-a-travel-itinerary-before-sending",
-  "/insights/10-common-itinerary-problems",
-  "/insights/why-correct-itineraries-can-be-impractical",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({ url: `https://touraudit.com${route}` }));
+  const pages = routes.map((route) => ({ url: `https://touraudit.com${route}` }));
+  const insightPages = Object.entries(articles)
+    .filter(([, article]) => isArticlePublished(article))
+    .map(([slug, article]) => ({
+      url: `https://touraudit.com/insights/${slug}`,
+      ...(article.publishDate ? { lastModified: new Date(article.publishDate) } : {}),
+    }));
+
+  return [...pages, ...insightPages];
 }
