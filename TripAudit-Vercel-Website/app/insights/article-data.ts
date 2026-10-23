@@ -1,5 +1,7 @@
+import { scheduledArticles } from "./scheduled-articles";
+
 export type ArticleSection = { heading: string; paragraphs?: string[]; bullets?: string[] };
-export type Article = { title: string; seoTitle: string; description: string; category: string; readTime: string; intro: string[]; sections: ArticleSection[] };
+export type Article = { title: string; seoTitle: string; description: string; category: string; readTime: string; publishDate?: string; intro: string[]; sections: ArticleSection[]; related?: { href: string; label: string }[] };
 
 export const articles: Record<string, Article> = {
   "how-to-review-a-travel-itinerary-before-sending": {
@@ -61,5 +63,6 @@ export const articles: Record<string, Article> = {
       { heading: "Operational knowledge has a time limit", paragraphs: ["Strikes, closures, maintenance, weather and overcrowding can change after a proposal is prepared. Separate what is known and included, what is normally expected and what must be reconfirmed closer to travel."] },
       { heading: "A better practicality test", bullets: ["Is the sequence sensible?", "Is there enough time around each service?", "Does the effort suit these travellers?", "Is there flexibility when something runs late?", "Does the programme match the holiday promise?", "Have important limitations been explained?"], paragraphs: ["A strong itinerary offers smooth flow, realistic breaks and correct expectations. TourAudit helps identify potential conflicts, operational gaps and missing information; its findings support—not replace—the consultant’s current knowledge and professional judgement."] }
     ]
-  }
+  },
+  ...scheduledArticles
 };

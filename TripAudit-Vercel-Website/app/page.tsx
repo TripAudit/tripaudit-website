@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 
@@ -65,11 +66,11 @@ export default function Home() {
       <section className="judgment"><div className="quote-mark">“</div><blockquote>TourAudit does not replace the consultant. It helps the consultant review with more consistency.</blockquote><p>You decide which observations matter, what needs to change and what is right for your client. Destination knowledge, live operational verification and final professional judgment remain yours.</p></section>
 
       <section className="section insights" id="insights">
-        <div className="section-heading row"><div><p className="eyebrow">From the TourAudit desk</p><h2>Better itinerary thinking.</h2></div><a className="text-link" href="/insights">View all insights <Arrow /></a></div>
+        <div className="section-heading row"><div><p className="eyebrow">From the TourAudit desk</p><h2>Better itinerary thinking.</h2></div><Link className="text-link" href="/insights">View all insights <Arrow /></Link></div>
         <div className="article-grid">
-          <article><div className="article-no">01</div><p>Quality control · 7 min</p><h3>How to Review a Travel Itinerary Before Sending It to a Client</h3><a href="/insights/how-to-review-a-travel-itinerary-before-sending">Read article <Arrow /></a></article>
-          <article><div className="article-no">02</div><p>Checklist · 6 min</p><h3>10 Common Itinerary Problems Travel Consultants Should Check</h3><a href="/insights/10-common-itinerary-problems">Read article <Arrow /></a></article>
-          <article><div className="article-no">03</div><p>Trip design · 5 min</p><h3>Why a Correct Itinerary Can Still Be Impractical</h3><a href="/insights/why-correct-itineraries-can-be-impractical">Read article <Arrow /></a></article>
+          <article><div className="article-no">01</div><p>Quality control · 7 min</p><h3>How to Review a Travel Itinerary Before Sending It to a Client</h3><Link href="/insights/how-to-review-a-travel-itinerary-before-sending">Read article <Arrow /></Link></article>
+          <article><div className="article-no">02</div><p>Checklist · 6 min</p><h3>10 Common Itinerary Problems Travel Consultants Should Check</h3><Link href="/insights/10-common-itinerary-problems">Read article <Arrow /></Link></article>
+          <article><div className="article-no">03</div><p>Trip design · 5 min</p><h3>Why a Correct Itinerary Can Still Be Impractical</h3><Link href="/insights/why-correct-itineraries-can-be-impractical">Read article <Arrow /></Link></article>
         </div>
       </section>
 
