@@ -38,6 +38,7 @@ export default function Insights() {
       <p>Practical guidance for reviewing trip flow, timings, hotels, transfers and client expectations.</p>
     </section>
     <section className="article-grid insights-list">
+      <h2 className="insights-list-title">All published insights</h2>
       {visible.map(([slug, article], index) => {
         const published = formatPublishDate(article.publishDate);
         return <article key={slug}>
