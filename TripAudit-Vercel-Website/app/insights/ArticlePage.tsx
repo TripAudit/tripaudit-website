@@ -1,11 +1,16 @@
 import Link from "next/link";
-import type { Article } from "./article-data";
-import { formatPublishDate } from "./publication";
+import { articles, type Article } from "./article-data";
+import { formatPublishDate, isArticlePublished } from "./publication";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
 export default function ArticlePage({ article }: { article: Article }) {
   const publishDate = formatPublishDate(article.publishDate);
+  const currentSlug = Object.entries(articles).find(([, candidate]) => candidate === article)?.[0];
+  const otherArticles = Object.entries(articles)
+    .filter(([slug, candidate]) => slug !== currentSlug && isArticlePublished(candidate))
+    .sort(([, a], [, b]) => new Date(b.publishDate ?? 0).getTime() - new Date(a.publishDate ?? 0).getTime())
+    .slice(0, 3);
 
   return <main className="article-page">
     <SiteHeader />
@@ -27,6 +32,18 @@ export default function ArticlePage({ article }: { article: Article }) {
           <h2>Related reading</h2>
           {article.related.map((item) => <Link key={item.href} href={item.href}>{item.label} →</Link>)}
         </nav>}
+        <section className="more-insights" aria-labelledby="more-insights-heading">
+          <div className="more-insights-heading">
+            <h2 id="more-insights-heading">More TourAudit insights</h2>
+            <Link href="/insights">View all published insights →</Link>
+          </div>
+          <div className="more-insights-list">
+            {otherArticles.map(([slug, candidate]) => <article key={slug}>
+              <p>{candidate.category} · {candidate.readTime}</p>
+              <h3><Link href={`/insights/${slug}`}>{candidate.title}</Link></h3>
+            </article>)}
+          </div>
+        </section>
         <aside className="article-cta">
           <p className="eyebrow">Review before you send</p>
           <h2>Add a structured second check to your workflow.</h2>
