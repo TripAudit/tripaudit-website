@@ -1,0 +1,34 @@
+// This campaign is a review-only draft. Production activation requires a
+// separate founder-authorized change after email entry and legal terms exist.
+export function isVoucherPreview(environment: {
+  vercelEnv?: string;
+  nodeEnv?: string;
+}) {
+  if (environment.vercelEnv === "production") return false;
+  return environment.vercelEnv === "preview" || environment.nodeEnv === "development";
+}
+
+export default function VoucherAnnouncement() {
+  if (!isVoucherPreview({
+    vercelEnv: process.env.VERCEL_ENV,
+    nodeEnv: process.env.NODE_ENV,
+  })) return null;
+
+  return (
+    <aside className="voucher-announcement" aria-labelledby="voucher-heading">
+      <div className="voucher-icon" aria-hidden="true">🎁</div>
+      <div className="voucher-copy">
+        <p className="voucher-draft">Preview only · Draw not open</p>
+        <h2 id="voucher-heading">Win an Amazon Gift Voucher!</h2>
+        <p className="voucher-intro">Help us improve TourAudit!</p>
+        <p>Review an itinerary, share your genuine feedback, and mention <strong>&quot;amazon feedback&quot;</strong> in your comment.</p>
+        <p>Want to participate in our lucky draw? You can voluntarily provide your email address when submitting feedback.</p>
+        <p className="voucher-date">Last date: <time dateTime="2026-12-31">31 December 2026</time></p>
+        <p className="voucher-fineprint">Participation is optional. Positive and negative feedback are equally welcome.</p>
+        <p className="voucher-fineprint">Terms and conditions apply.</p>
+        <p className="voucher-preview-note">Draft announcement for review. Optional email entry and campaign terms must be ready before launch.</p>
+      </div>
+      <a className="button voucher-cta" href="https://app.touraudit.com">Try TourAudit <span aria-hidden="true">→</span></a>
+    </aside>
+  );
+}
