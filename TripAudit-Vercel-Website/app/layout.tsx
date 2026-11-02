@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://touraudit.com"),
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body className="antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {children}
+        <GoogleAnalytics />
       </body>
     </html>
   );
