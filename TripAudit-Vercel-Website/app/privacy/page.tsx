@@ -28,6 +28,10 @@ export default function PrivacyPage() {
           <li>TourAudit uses submitted itinerary information only to provide and improve the itinerary-review service during testing.</li>
         </ul>
       </section>
+      <section>
+        <h2>Website analytics</h2>
+        <p>TourAudit may use Google Analytics on the public marketing website to understand page visits, traffic sources and general website use. This marketing-site integration is separate from the itinerary-review application and is not used to send submitted itinerary text to Google Analytics.</p>
+      </section>
       <aside className="principle" aria-label="Interim privacy notice">
         <p><strong>This interim page will be replaced by the complete Privacy Policy before broader public use.</strong></p>
       </aside>

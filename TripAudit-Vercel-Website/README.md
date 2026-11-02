@@ -32,3 +32,12 @@ npm run dev
 ```
 
 Then open `http://localhost:3000`.
+
+## Google services
+
+The site supports two optional Vercel environment variables:
+
+- `GOOGLE_SITE_VERIFICATION` adds the Google Search Console verification meta tag.
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` activates GA4 when its value is a valid web-stream ID beginning with `G-`.
+
+Redeploy Production after adding or changing either value. Once Search Console ownership is verified, submit `https://touraudit.com/sitemap.xml`.
