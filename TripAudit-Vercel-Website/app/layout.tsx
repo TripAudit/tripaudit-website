@@ -25,9 +25,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://touraudit.com/#organization",
+        name: "TourAudit",
+        url: "https://touraudit.com",
+        logo: "https://touraudit.com/touraudit-logo-horizontal.svg",
+        email: "hello@touraudit.com",
+        description: "TourAudit provides AI-assisted itinerary quality control for travel consultants.",
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://touraudit.com/#website",
+        url: "https://touraudit.com",
+        name: "TourAudit",
+        publisher: { "@id": "https://touraudit.com/#organization" },
+        inLanguage: "en",
+      },
+    ],
+  };
+
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        {children}
+      </body>
     </html>
   );
 }

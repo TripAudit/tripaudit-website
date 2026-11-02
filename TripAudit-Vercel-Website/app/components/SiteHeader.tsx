@@ -16,7 +16,7 @@ export default function SiteHeader() {
     }}>
       <Link className="brand" href="/" aria-label="TourAudit home">
         <Image src="/touraudit-logo-horizontal.svg" alt="TourAudit" width={180} height={45} priority />
-        <span>Beta</span>
+        <span>Pilot</span>
       </Link>
       <nav aria-label="Main navigation">
         <Link href="/how-it-works">How it works</Link>
