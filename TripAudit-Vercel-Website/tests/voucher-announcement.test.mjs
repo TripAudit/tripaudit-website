@@ -59,12 +59,14 @@ test('Preview and local development show an explicitly unopened draft', () => {
 test('approved copy, closing date, equal eligibility and CTA are retained', () => {
   const html = renderFor('preview', 'production');
   for (const text of [
-    'TourAudit Best Feedback Award 🎁', 'Help us improve TourAudit!',
+    'TourAudit Best Feedback Award', 'Help us improve TourAudit!',
     'Review an itinerary, share your genuine feedback, and mention',
     '&quot;amazon feedback&quot;',
-    'Want to participate in the Best Feedback Award? You may voluntarily provide your email address when submitting feedback. TourAudit will assess entries for specificity, actionable suggestions, and relevance to improving the product. Selection is based on merit, not chance.',
+    'Amazon Gift Voucher award',
+    'Want to participate? You may voluntarily provide your email address when submitting feedback.',
+    'The TourAudit team will select feedback based on its usefulness, actionable suggestions and relevance to improving TourAudit.',
     '31 December 2026',
-    'Participation is optional. Positive and negative feedback are equally welcome.',
+    'Participation is free and optional. Positive and negative feedback are equally welcome.',
     'Terms and conditions apply.',
   ]) assert.ok(html.includes(text), text);
   assert.match(html, /href="https:\/\/app\.touraudit\.com"/);
@@ -80,8 +82,8 @@ test('no email capture, scripts, invented terms link or internal prize details',
   assert.match(html, /aria-labelledby="voucher-heading"/);
 });
 
-test('award is merit-based rather than a lucky draw', () => {
+test('award uses the approved merit criteria without chance-based selection', () => {
   const html = renderFor('preview', 'production');
-  assert.match(html, /Selection is based on merit, not chance/);
-  assert.doesNotMatch(html, /lucky draw|randomly selected/i);
+  assert.match(html, /usefulness, actionable suggestions and relevance to improving TourAudit/);
+  assert.doesNotMatch(html, /lucky draw|random|chance|sweepstakes/i);
 });

@@ -19,12 +19,14 @@ export default function VoucherAnnouncement() {
       <div className="voucher-icon" aria-hidden="true">🎁</div>
       <div className="voucher-copy">
         <p className="voucher-draft">Preview only · Award not open</p>
-        <h2 id="voucher-heading">TourAudit Best Feedback Award 🎁</h2>
+        <h2 id="voucher-heading">TourAudit Best Feedback Award</h2>
         <p className="voucher-intro">Help us improve TourAudit!</p>
+        <p>Amazon Gift Voucher award</p>
         <p>Review an itinerary, share your genuine feedback, and mention <strong>&quot;amazon feedback&quot;</strong> in your comment.</p>
-        <p>Want to participate in the Best Feedback Award? You may voluntarily provide your email address when submitting feedback. TourAudit will assess entries for specificity, actionable suggestions, and relevance to improving the product. Selection is based on merit, not chance.</p>
+        <p>Want to participate? You may voluntarily provide your email address when submitting feedback.</p>
+        <p>The TourAudit team will select feedback based on its usefulness, actionable suggestions and relevance to improving TourAudit.</p>
         <p className="voucher-date">Last date: <time dateTime="2026-12-31">31 December 2026</time></p>
-        <p className="voucher-fineprint">Participation is optional. Positive and negative feedback are equally welcome.</p>
+        <p className="voucher-fineprint">Participation is free and optional. Positive and negative feedback are equally welcome.</p>
         <p className="voucher-fineprint">Terms and conditions apply.</p>
         <p className="voucher-preview-note">Draft announcement for review. Optional email entry, eligibility rules, and legally reviewed award terms must be ready before launch.</p>
       </div>
