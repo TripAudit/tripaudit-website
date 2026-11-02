@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "TourAudit | Itinerary Quality Control for Travel Consultants",
     description: "A structured second review for travel consultants before an itinerary reaches the client.",
   },
-  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+  verification: { google: "ovPt4ALc2Ft3Qi-6uY4Fi52qqYmpszPh1HywoNrnTdQ" },
   icons: {
     icon: "/touraudit-icon.svg",
     shortcut: "/touraudit-icon.svg",
