@@ -52,17 +52,17 @@ test('Preview and local development show an explicitly unopened draft', () => {
   assert.equal(isVoucherPreview({ vercelEnv: 'preview', nodeEnv: 'production' }), true);
   assert.equal(isVoucherPreview({ nodeEnv: 'development' }), true);
   const html = renderFor('preview', 'production');
-  assert.match(html, /Preview only · Draw not open/);
-  assert.match(html, /Optional email entry and campaign terms must be ready before launch/);
+  assert.match(html, /Preview only · Award not open/);
+  assert.match(html, /Optional email entry, eligibility rules, and legally reviewed award terms must be ready before launch/);
 });
 
 test('approved copy, closing date, equal eligibility and CTA are retained', () => {
   const html = renderFor('preview', 'production');
   for (const text of [
-    'Win an Amazon Gift Voucher!', 'Help us improve TourAudit!',
+    'TourAudit Best Feedback Award 🎁', 'Help us improve TourAudit!',
     'Review an itinerary, share your genuine feedback, and mention',
     '&quot;amazon feedback&quot;',
-    'Want to participate in our lucky draw? You can voluntarily provide your email address when submitting feedback.',
+    'Want to participate in the Best Feedback Award? You may voluntarily provide your email address when submitting feedback. TourAudit will assess entries for specificity, actionable suggestions, and relevance to improving the product. Selection is based on merit, not chance.',
     '31 December 2026',
     'Participation is optional. Positive and negative feedback are equally welcome.',
     'Terms and conditions apply.',
@@ -78,4 +78,10 @@ test('no email capture, scripts, invented terms link or internal prize details',
   assert.doesNotMatch(html, /US\$|\$10|one winner|one randomly/i);
   assert.equal((html.match(/href=/g) || []).length, 1);
   assert.match(html, /aria-labelledby="voucher-heading"/);
+});
+
+test('award is merit-based rather than a lucky draw', () => {
+  const html = renderFor('preview', 'production');
+  assert.match(html, /Selection is based on merit, not chance/);
+  assert.doesNotMatch(html, /lucky draw|randomly selected/i);
 });
