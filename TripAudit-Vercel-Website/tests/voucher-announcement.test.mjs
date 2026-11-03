@@ -78,7 +78,8 @@ test('no email capture, scripts or internal prize details', () => {
   const html = renderFor('preview', 'production');
   assert.doesNotMatch(html, /<(form|input|script)\b/i);
   assert.doesNotMatch(html, /US\$|\$10|one winner|one randomly/i);
-  assert.equal((html.match(/href=/g) || []).length, 2);\n  assert.match(html, /href="\/best-feedback-award-terms"/);
+  assert.equal((html.match(/href=/g) || []).length, 2);
+  assert.match(html, /href="\/best-feedback-award-terms"/);
   assert.match(html, /aria-labelledby="voucher-heading"/);
 });
 
