@@ -21,6 +21,7 @@ export default function SiteHeader() {
       <nav aria-label="Main navigation">
         <Link href="/how-it-works">How it works</Link>
         <Link href="/what-touraudit-reviews">What it reviews</Link>
+        <Link href="/why-touraudit">Why TourAudit?</Link>
         <Link href="/insights">Insights</Link>
         <Link href="/about">About</Link>
         <Link href="/faq">FAQ</Link>
@@ -44,6 +45,7 @@ export default function SiteHeader() {
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/how-it-works" onClick={closeMenu}>How It Works</Link>
         <Link href="/what-touraudit-reviews" onClick={closeMenu}>What TourAudit Reviews</Link>
+        <Link href="/why-touraudit" onClick={closeMenu}>Why TourAudit?</Link>
         <Link href="/about" onClick={closeMenu}>About</Link>
         <Link href="/faq" onClick={closeMenu}>FAQ</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>

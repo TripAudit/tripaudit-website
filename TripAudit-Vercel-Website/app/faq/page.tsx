@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ContentPage from "../components/ContentPage";
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function FaqPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }} />
     <ContentPage eyebrow="Frequently asked questions" title="Clear answers about TourAudit." introduction="Find out what to submit, what the review can identify and which decisions remain with the travel professional.">
       <div className="faq-list">{questions.map(([question, answer]) => <section key={question}><h2>{question}</h2><p>{answer}</p></section>)}</div>
+      <aside className="principle"><h2>How is TourAudit different from ChatGPT or Gemini?</h2><p>General AI tools can review an itinerary when given suitable instructions. TourAudit brings travel-operational checks into a repeatable workflow designed for consultants. <Link className="text-link" href="/why-touraudit">Read the full comparison →</Link></p></aside>
     </ContentPage>
   </>;
 }
