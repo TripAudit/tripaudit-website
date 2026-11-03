@@ -11,7 +11,7 @@ export default function AwardTermsPage() {
     <h1>TourAudit Best Feedback Award — Terms</h1>
     <p>Organizer: TechPrompt Universe, P.O. Box 3398, Bengaluru, Karnataka 560035, India. Contact: <a href="mailto:admin@touraudit.com">admin@touraudit.com</a>.</p>
     <h2>Eligibility and entry</h2>
-    <p>Open to residents of India aged 18 or older. Free and voluntary, with no purchase required. One eligible entry per person. Organizer staff, administrators and judges are excluded. Complete a TourAudit itinerary review, submit genuine feedback containing “amazon feedback”, and voluntarily opt in with an email address and explicit consent after feedback is saved. Ordinary feedback does not require award participation.</p>
+    <p>Open to residents of India aged 18 or older. Free and voluntary, with no purchase required. One eligible entry per person. Organizer staff, administrators and judges are excluded. Complete a TourAudit itinerary review, submit genuine feedback, and optionally select the Best Feedback Award checkbox within the feedback form. If participating, provide an email address and separate explicit consent to sharing the original itinerary, AI review and linked feedback. No keyword is required in the comment. Ordinary feedback does not require award participation.</p>
     <h2>Period</h2>
     <p>Entries close on 31 December 2026 at 11:59 PM IST. The opening date will be announced when entries are activated. Any extension will be reflected in these terms.</p>
     <h2>Selection</h2>
