@@ -8,6 +8,7 @@ const routes = [
   "",
   "/how-it-works",
   "/what-touraudit-reviews",
+  "/why-touraudit",
   "/about",
   "/faq",
   "/contact",

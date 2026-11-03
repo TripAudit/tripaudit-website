@@ -14,6 +14,7 @@ export default function SiteFooter({ className = "" }: { className?: string }) {
         <strong>Explore</strong>
         <Link href="/how-it-works">How it works</Link>
         <Link href="/what-touraudit-reviews">What it reviews</Link>
+        <Link href="/why-touraudit">Why TourAudit?</Link>
         <Link href="/insights">Insights</Link>
         <Link href="/faq">FAQ</Link>
       </div>

@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className="section intro" id="about">
         <div><p className="eyebrow">A second set of eyes</p><h2>Correct on paper.<br />Practical in real life.</h2></div>
-        <div><p className="section-lead">A flight can be confirmed, a hotel can be booked and every date can match, yet the complete itinerary may still create a poor client experience.</p><p>Proofreading asks whether the document reads correctly. Itinerary quality control asks whether the journey works. Is there enough time after arrival? Do the services connect logically? Are important details missing? Does the programme match what the client has been promised?</p><p>TourAudit brings these questions into one pre-send review. The consultant keeps control of every final decision.</p></div>
+        <div><p className="section-lead">A flight can be confirmed, a hotel can be booked and every date can match, yet the complete itinerary may still create a poor client experience.</p><p>Proofreading asks whether the document reads correctly. Itinerary quality control asks whether the journey works. Is there enough time after arrival? Do the services connect logically? Are important details missing? Does the programme match what the client has been promised?</p><p>TourAudit brings these questions into one pre-send review. The consultant keeps control of every final decision.</p><p><Link className="text-link" href="/why-touraudit">See how TourAudit differs from general AI tools <Arrow /></Link></p></div>
       </section>
 
       <section className="value-grid">
