@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
+import VoucherAnnouncement from "./components/VoucherAnnouncement";
 
 const Arrow = () => <span aria-hidden="true">→</span>;
 
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <SiteHeader />
+      <VoucherAnnouncement />
 
       <section className="hero" id="top">
         <div className="hero-copy">
