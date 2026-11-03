@@ -27,7 +27,7 @@ export default function VoucherAnnouncement() {
         <p>The TourAudit team will select feedback based on its usefulness, actionable suggestions and relevance to improving TourAudit.</p>
         <p className="voucher-date">Last date: <time dateTime="2026-12-31">31 December 2026</time></p>
         <p className="voucher-fineprint">Participation is free and optional. Positive and negative feedback are equally welcome.</p>
-        <p className="voucher-fineprint"><a href="/best-feedback-award-terms">Read award terms</a>.</p>
+        <p className="voucher-fineprint"><a href="/best-feedback-award">Award details and conditions</a>.</p>
         {process.env.VERCEL_ENV !== "production" && <p className="voucher-preview-note">Draft announcement for review. Award entry must be active before publication.</p>}
       </div>
       <a className="button voucher-cta" href="https://app.touraudit.com">Try TourAudit <span aria-hidden="true">→</span></a>
