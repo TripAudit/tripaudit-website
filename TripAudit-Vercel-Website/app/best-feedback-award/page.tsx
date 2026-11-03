@@ -20,7 +20,7 @@ export default function BestFeedbackAwardPage() {
     </div>
     <section style={sectionStyle}><h2>How to participate</h2>
       <p>Run a TourAudit itinerary review and submit genuine feedback. Participation in the award is optional; ordinary feedback is available without sharing an email or itinerary for the award.</p>
-      <p><strong>Current application process:</strong> Include <strong>“amazon feedback”</strong> in your feedback comment. After saving feedback, opt into the award, provide your email address and explicitly consent to sharing the original itinerary and AI review. We are preparing a simpler checkbox within the feedback form; until that change is deployed, the current application process applies.</p>
+      <p>In the feedback form, select the optional <strong>TourAudit Best Feedback Award</strong> checkbox. If you choose to participate, provide your email address and separately consent to sharing your original itinerary, AI review and feedback for product improvement and award administration. Use the same Submit Feedback button. You do not need to type a special keyword in your comment.</p>
       <p>Please remove traveller names, contact details, booking references and other confidential information before sharing. Do not submit material you are not authorized to disclose.</p>
     </section>
     <section style={sectionStyle}><h2>How feedback is selected</h2>
