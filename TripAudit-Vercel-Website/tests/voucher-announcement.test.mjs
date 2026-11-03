@@ -67,7 +67,7 @@ test('approved copy, closing date, equal eligibility and CTA are retained', () =
     'The TourAudit team will select feedback based on its usefulness, actionable suggestions and relevance to improving TourAudit.',
     '31 December 2026',
     'Participation is free and optional. Positive and negative feedback are equally welcome.',
-    'Read award terms',
+    'Award details and conditions',
   ]) assert.ok(html.includes(text), text);
   assert.match(html, /href="https:\/\/app\.touraudit\.com"/);
   assert.match(html, /dateTime="2026-12-31"/);
@@ -79,7 +79,7 @@ test('no email capture, scripts or internal prize details', () => {
   assert.doesNotMatch(html, /<(form|input|script)\b/i);
   assert.doesNotMatch(html, /US\$|\$10|one winner|one randomly/i);
   assert.equal((html.match(/href=/g) || []).length, 2);
-  assert.match(html, /href="\/best-feedback-award-terms"/);
+  assert.match(html, /href="\/best-feedback-award"/);
   assert.match(html, /aria-labelledby="voucher-heading"/);
 });
 
