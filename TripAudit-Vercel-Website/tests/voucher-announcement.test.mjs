@@ -53,7 +53,7 @@ test('Preview and local development show an explicitly unopened draft', () => {
   assert.equal(isVoucherPreview({ nodeEnv: 'development' }), true);
   const html = renderFor('preview', 'production');
   assert.match(html, /Preview only · Award not open/);
-  assert.match(html, /Optional email entry, eligibility rules, and legally reviewed award terms must be ready before launch/);
+  assert.match(html, /Award entry must be active before publication/);
 });
 
 test('approved copy, closing date, equal eligibility and CTA are retained', () => {
@@ -67,18 +67,18 @@ test('approved copy, closing date, equal eligibility and CTA are retained', () =
     'The TourAudit team will select feedback based on its usefulness, actionable suggestions and relevance to improving TourAudit.',
     '31 December 2026',
     'Participation is free and optional. Positive and negative feedback are equally welcome.',
-    'Terms and conditions apply.',
+    'Read award terms',
   ]) assert.ok(html.includes(text), text);
   assert.match(html, /href="https:\/\/app\.touraudit\.com"/);
   assert.match(html, /dateTime="2026-12-31"/);
   assert.match(html, /Try TourAudit/);
 });
 
-test('no email capture, scripts, invented terms link or internal prize details', () => {
+test('no email capture, scripts or internal prize details', () => {
   const html = renderFor('preview', 'production');
   assert.doesNotMatch(html, /<(form|input|script)\b/i);
   assert.doesNotMatch(html, /US\$|\$10|one winner|one randomly/i);
-  assert.equal((html.match(/href=/g) || []).length, 1);
+  assert.equal((html.match(/href=/g) || []).length, 2);\n  assert.match(html, /href="\/best-feedback-award-terms"/);
   assert.match(html, /aria-labelledby="voucher-heading"/);
 });
 
