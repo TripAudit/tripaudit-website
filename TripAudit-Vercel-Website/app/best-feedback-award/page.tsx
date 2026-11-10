@@ -31,7 +31,7 @@ export default function BestFeedbackAwardPage() {
       <p>One ₹1,000 digital Amazon Pay Gift Card will be emailed by 27 January 2027 after eligibility confirmation. There is no claim fee. Issuer redemption and expiry conditions apply. Amazon does not organize or sponsor this award.</p>
     </section>
     <section style={sectionStyle}><h2>Privacy and withdrawal</h2>
-      <p>With explicit consent, TechPrompt Universe stores the participant's email, original itinerary, AI review, linked feedback reference and consent information for improving TourAudit, evaluating entries and administering the award. Award participation is not marketing-email consent. Participant identities and submitted content are not published.</p>
+      <p>With explicit consent, TechPrompt Universe stores the participant&apos;s email, original itinerary, AI review, linked feedback reference and consent information for improving TourAudit, evaluating entries and administering the award. Award participation is not marketing-email consent. Participant identities and submitted content are not published.</p>
       <p>You may withdraw using the private withdrawal code provided with your entry or, while authorized, through your review session. <a href="https://app.touraudit.com/award-withdrawal">Withdraw an award entry</a>. Withdrawal removes associated award data from active storage without deleting ordinary feedback.</p>
       <p>Award records are scheduled for manual deletion from active storage by 31 January 2027, subject to legally required retention. Provider backup retention may differ. Privacy enquiries: <a href="mailto:admin@touraudit.com">admin@touraudit.com</a>.</p>
     </section>
