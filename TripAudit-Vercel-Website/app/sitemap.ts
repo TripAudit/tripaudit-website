@@ -14,6 +14,14 @@ const routes = [
   "/contact",
   "/privacy",
   "/insights",
+  "/updates",
+];
+
+const updatePages = [
+  {
+    route: "/updates/free-pilot-itinerary-review",
+    published: "2026-11-10",
+  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -25,5 +33,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(article.publishDate ? { lastModified: new Date(article.publishDate) } : {}),
     }));
 
-  return [...pages, ...insightPages];
+  const updates = updatePages.map((update) => ({
+    url: `https://touraudit.com${update.route}`,
+    lastModified: new Date(update.published),
+  }));
+
+  return [...pages, ...updates, ...insightPages];
 }

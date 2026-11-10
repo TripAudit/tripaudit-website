@@ -27,6 +27,7 @@ export default function SiteFooter({ className = "" }: { className?: string }) {
       <div>
         <strong>Product</strong>
         <a href={APP_URL}>Open TourAudit</a>
+        <Link href="/updates">Product updates</Link>
         <span>Controlled public pilot</span>
       </div>
       <p className="copyright">© 2026 TourAudit. All rights reserved.</p>
