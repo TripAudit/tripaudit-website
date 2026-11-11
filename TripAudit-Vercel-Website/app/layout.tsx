@@ -3,7 +3,7 @@ import "./globals.css";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://touraudit.com"),
+  metadataBase: new URL("https://www.touraudit.com"),
   title: "TourAudit | Itinerary Quality Control for Travel Consultants",
   description: "TourAudit helps travel consultants identify potential itinerary gaps, conflicts and practical concerns before an itinerary reaches the client.",
   alternates: { canonical: "/" },
@@ -31,19 +31,19 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://touraudit.com/#organization",
+        "@id": "https://www.touraudit.com/#organization",
         name: "TourAudit",
-        url: "https://touraudit.com",
-        logo: "https://touraudit.com/touraudit-logo-horizontal.svg",
+        url: "https://www.touraudit.com",
+        logo: "https://www.touraudit.com/touraudit-logo-horizontal.svg",
         email: "hello@touraudit.com",
         description: "TourAudit provides AI-assisted itinerary quality control for travel consultants.",
       },
       {
         "@type": "WebSite",
-        "@id": "https://touraudit.com/#website",
-        url: "https://touraudit.com",
+        "@id": "https://www.touraudit.com/#website",
+        url: "https://www.touraudit.com",
         name: "TourAudit",
-        publisher: { "@id": "https://touraudit.com/#organization" },
+        publisher: { "@id": "https://www.touraudit.com/#organization" },
         inLanguage: "en",
       },
     ],

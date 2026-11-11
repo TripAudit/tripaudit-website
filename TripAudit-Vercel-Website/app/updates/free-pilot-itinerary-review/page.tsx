@@ -5,7 +5,7 @@ import SiteHeader from "../../components/SiteHeader";
 
 const title = "TourAudit’s free pilot introduces a structured second check for travel itineraries";
 const description = "TourAudit’s free pilot gives travel professionals an advisory operational review of an itinerary before it is sent to a client.";
-const canonicalUrl = "https://touraudit.com/updates/free-pilot-itinerary-review";
+const canonicalUrl = "https://www.touraudit.com/updates/free-pilot-itinerary-review";
 
 export const metadata: Metadata = {
   title: "Free Pilot for Itinerary Review | TourAudit",
@@ -34,18 +34,18 @@ export default function FreePilotItineraryReviewUpdate() {
     inLanguage: "en",
     author: {
       "@type": "Organization",
-      "@id": "https://touraudit.com/#organization",
+      "@id": "https://www.touraudit.com/#organization",
       name: "TourAudit",
-      url: "https://touraudit.com",
+      url: "https://www.touraudit.com",
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://touraudit.com/#organization",
+      "@id": "https://www.touraudit.com/#organization",
       name: "TourAudit",
-      url: "https://touraudit.com",
+      url: "https://www.touraudit.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://touraudit.com/touraudit-logo-horizontal.svg",
+        url: "https://www.touraudit.com/touraudit-logo-horizontal.svg",
       },
     },
   };
