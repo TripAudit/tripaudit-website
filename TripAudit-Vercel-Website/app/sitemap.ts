@@ -25,16 +25,16 @@ const updatePages = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = routes.map((route) => ({ url: `https://touraudit.com${route}` }));
+  const pages = routes.map((route) => ({ url: `https://www.touraudit.com${route}` }));
   const insightPages = Object.entries(articles)
     .filter(([, article]) => isArticlePublished(article))
     .map(([slug, article]) => ({
-      url: `https://touraudit.com/insights/${slug}`,
+      url: `https://www.touraudit.com/insights/${slug}`,
       ...(article.publishDate ? { lastModified: new Date(article.publishDate) } : {}),
     }));
 
   const updates = updatePages.map((update) => ({
-    url: `https://touraudit.com${update.route}`,
+    url: `https://www.touraudit.com${update.route}`,
     lastModified: new Date(update.published),
   }));
 

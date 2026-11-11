@@ -32,8 +32,8 @@ export default function WhyTourAuditPage() {
     name: "Why Use TourAudit When You Already Have ChatGPT?",
     url: "https://www.touraudit.com/why-touraudit",
     description: "A practical comparison of TourAudit and general AI tools for travel itinerary review.",
-    isPartOf: { "@id": "https://touraudit.com/#website" },
-    about: { "@id": "https://touraudit.com/#organization" },
+    isPartOf: { "@id": "https://www.touraudit.com/#website" },
+    about: { "@id": "https://www.touraudit.com/#organization" },
   };
 
   return (
