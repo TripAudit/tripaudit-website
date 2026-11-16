@@ -151,5 +151,300 @@ export const scheduledArticles: Record<string, Article> = {
       { href: "/what-touraudit-reviews", label: "See what TourAudit reviews" },
       { href: "/insights/how-to-review-a-travel-itinerary-before-sending", label: "Read the complete pre-send review guide" }
     ]
-  }
+  },
+"train-connections-beyond-timetable": {
+  "title": "A Train Connection Needs More Than a Timetable Check",
+  "seoTitle": "How to Review Train Connections in an Itinerary | TourAudit",
+  "description": "Review station changes, luggage, arrival margins and the next commitment when checking a train connection in a client itinerary.",
+  "category": "Transport planning",
+  "readTime": "4 min read",
+  "publishDate": "2026-11-20T09:00:00+05:30",
+  "intro": [
+    "A train journey can look tidy in a proposal: depart at 09:00, arrive at 11:00, change trains and continue. The traveller experiences something less tidy. There is a hotel to leave, a station to navigate and luggage to move before the next platform is even in sight.",
+    "The useful question is not simply whether a connection appears in a timetable. It is whether the whole movement makes sense for the people taking the trip."
+  ],
+  "sections": [
+    {
+      "heading": "Start before the first departure",
+      "paragraphs": [
+        "Work backwards from the train. Allow for leaving the hotel, reaching the correct station, finding the platform and completing any applicable boarding or security steps. Check the actual service requirements rather than applying one reporting margin to every train.",
+        "A transfer described as a short drive can still leave little room for a delayed pickup. Where a fixed departure depends on that transfer, make the dependency visible in the plan."
+      ]
+    },
+    {
+      "heading": "Read the station names carefully",
+      "paragraphs": [
+        "A city name does not establish that two trains use the same station. A change across the city is a separate journey, with its own transport, luggage handling and delay risk.",
+        "For a same-station change, consider what the traveller may need to do between platforms. A short connection deserves closer attention when the party has children, limited mobility or several bags. Do not assume a platform layout or lift availability without checking."
+      ]
+    },
+    {
+      "heading": "Consider what happens after a missed connection",
+      "paragraphs": [
+        "An illustrative connection of twelve minutes might be manageable for one traveller and uncomfortable for another. Its consequences also matter. Is there another suitable service, or would a missed train disrupt the only practical onward journey?",
+        "Check ticket conditions and connection protection with the relevant operator or seller. Avoid promising that a later service can be used unless that has been confirmed."
+      ]
+    },
+    {
+      "heading": "Keep the arrival plan honest",
+      "paragraphs": [
+        "Arrival at the station is not arrival at the hotel. Add the onward transfer, luggage arrangements and check-in before assessing whether an afternoon activity fits.",
+        "A fixed tour immediately after a rail arrival creates a chain of commitments. If the train is delayed, the tour may be affected too. A flexible afternoon may be a better fit when the client has no reason to accept that pressure."
+      ]
+    },
+    {
+      "heading": "Write down the detail that changes the decision",
+      "paragraphs": [
+        "The client does not need a station operations manual. They do need the correct stations, the nature of any change and clear responsibility for transfers and reservations.",
+        "Before sending, read the day from hotel door to hotel door. If the sequence only works when every step runs perfectly, revisit it."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "https://app.touraudit.com",
+      "label": "Try the TourAudit free pilot"
+    },
+    {
+      "href": "/what-touraudit-reviews",
+      "label": "What TourAudit reviews"
+    }
+  ]
+},
+"driver-hours-private-tour-itinerary": {
+  "title": "A Private Vehicle Is Not Available Without Limits",
+  "seoTitle": "Review Driver Hours and Vehicle Use in Private Tours | TourAudit",
+  "description": "Check vehicle service windows, waiting time, overtime and transfer assumptions before sending a private-tour itinerary.",
+  "category": "Private touring",
+  "readTime": "4 min read",
+  "publishDate": "2026-11-24T09:00:00+05:30",
+  "intro": [
+    "A private vehicle can make a complicated day feel simple. The same driver collects the clients, takes them between stops and returns them to the hotel. That convenience can hide a basic question: what period of service has actually been booked?",
+    "An itinerary may list a full day of activities while the supplier confirmation covers a shorter window. The mismatch becomes harder to resolve once clients are already travelling."
+  ],
+  "sections": [
+    {
+      "heading": "Put the service window beside the programme",
+      "paragraphs": [
+        "Compare the confirmed start and finish times with the day's first pickup and final drop-off. Include travel between stops and any waiting that falls within the booked service.",
+        "For example, a programme running from 08:00 to 20:00 needs clarification if the vehicle is confirmed for ten hours. That does not automatically mean the day is impossible. It means the service and the programme have not yet been reconciled."
+      ]
+    },
+    {
+      "heading": "Waiting is part of the arrangement",
+      "paragraphs": [
+        "While clients visit an attraction or stop for lunch, the vehicle arrangement still needs to be understood. Does waiting count towards the booked hours? Can the driver leave and return? Are later transfers separately priced?",
+        "Confirm these points with the supplier. Avoid describing a vehicle as available throughout the day when only specific transfers are included."
+      ]
+    },
+    {
+      "heading": "Look beyond the headline overtime rate",
+      "paragraphs": [
+        "If the quotation mentions overtime, check how it is calculated, who approves it and how clients will be informed. An illustrative rate of EUR 90 per hour is useful only when the likely service duration is also understood.",
+        "The presence of an overtime price does not guarantee that an extension will be available. Supplier conditions, driver availability and applicable operating rules still need to be checked."
+      ]
+    },
+    {
+      "heading": "Check what the vehicle can actually reach",
+      "paragraphs": [
+        "A private transfer does not establish that the vehicle can stop outside every hotel or attraction. Confirm access and suitable pickup or drop-off points where restrictions may affect the day.",
+        "If the final approach involves walking or local transport, explain it before travel. This matters particularly when clients have luggage or have chosen private touring to reduce physical effort."
+      ]
+    },
+    {
+      "heading": "Resolve the gap before the client has to",
+      "paragraphs": [
+        "Once a concern is identified, adjust the programme, book the required service or explain an agreed additional charge. Do not leave the driver and traveller to negotiate an unclear promise during the trip.",
+        "Clear wording can be brief: state the confirmed service window, important access limitations and the process for requesting extra use."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "https://app.touraudit.com",
+      "label": "Try the TourAudit free pilot"
+    },
+    {
+      "href": "/what-touraudit-reviews",
+      "label": "What TourAudit reviews"
+    }
+  ]
+},
+"timed-tickets-flexibility-itinerary": {
+  "title": "When Timed Tickets Make a Sightseeing Day Too Fragile",
+  "seoTitle": "Plan Timed Tickets Without Overloading the Day | TourAudit",
+  "description": "Review the dependencies between timed entries, guided tours, meals and transfers before committing clients to a fixed sightseeing schedule.",
+  "category": "Daily planning",
+  "readTime": "4 min read",
+  "publishDate": "2026-11-27T09:00:00+05:30",
+  "intro": [
+    "A morning museum, an afternoon guided tour and an evening performance can each be a good choice. Together, they may leave the traveller with a day that is easy to disrupt.",
+    "Timed tickets are not the problem. The difficulty begins when an itinerary treats the spaces between them as empty time rather than part of the journey."
+  ],
+  "sections": [
+    {
+      "heading": "Separate fixed commitments from flexible visits",
+      "paragraphs": [
+        "Mark the activities that require arrival at a particular time. Then distinguish them from places that can be visited earlier, later or another day.",
+        "This simple separation shows where the day has room to recover. A walk through a neighbourhood can move. A tour with a set meeting time may not."
+      ]
+    },
+    {
+      "heading": "Include the part before the entry time",
+      "paragraphs": [
+        "An entry booked for 11:00 may require the traveller to arrive earlier. Check the supplier's meeting instructions, ticket collection, security arrangements and late-arrival conditions.",
+        "Also establish where the previous activity finishes. The distance between two attraction names may say little about the time required to leave one, reach the next entrance and find the meeting point."
+      ]
+    },
+    {
+      "heading": "Protect ordinary human needs",
+      "paragraphs": [
+        "Meals, toilets, rest and the occasional wrong turn are not exceptional events. A realistic plan leaves room for them.",
+        "Consider an illustrative day with entry at 10:00 and a guided tour at 13:00. It may fit, but only after checking the first visit's likely duration, the transfer and a sensible meal opportunity. The three-hour gap alone does not answer the question."
+      ]
+    },
+    {
+      "heading": "Look for the commitment that puts everything else at risk",
+      "paragraphs": [
+        "A timed visit after an airport arrival or intercity journey depends on more than sightseeing choices. A delay earlier in the day can affect the booking before the clients reach the city.",
+        "Where possible, place a priority activity on a day with fewer dependencies. If the timing must stay, explain the risk and confirm the relevant change or cancellation terms before booking."
+      ]
+    },
+    {
+      "heading": "Leave the client a choice",
+      "paragraphs": [
+        "A proposal does not need to fill every available hour. One important booking and a flexible set of nearby options can produce a more comfortable day than several tightly linked reservations.",
+        "Review the schedule against the pace the client asked for. A trip sold as relaxed should give them some freedom to linger, pause or change their mind."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "https://app.touraudit.com",
+      "label": "Try the TourAudit free pilot"
+    },
+    {
+      "href": "/what-touraudit-reviews",
+      "label": "What TourAudit reviews"
+    }
+  ]
+},
+"itinerary-handover-supplier-confirmations": {
+  "title": "The Final Itinerary Should Agree With the Supplier Confirmations",
+  "seoTitle": "Check Itinerary and Supplier Confirmation Consistency | TourAudit",
+  "description": "A practical final handover check for hotel nights, room arrangements, transfers, sightseeing inclusions and unresolved changes.",
+  "category": "Quality control",
+  "readTime": "4 min read",
+  "publishDate": "2026-12-01T09:00:00+05:30",
+  "intro": [
+    "A proposal often changes several times before travel. A hotel is replaced, a transfer moves to a different time, or a tour is confirmed with a different meeting arrangement. Each change may be correct in one document and absent from another.",
+    "The final itinerary should describe the trip that has been arranged. A polished document can still carry an earlier version of the booking."
+  ],
+  "sections": [
+    {
+      "heading": "Choose the documents you are comparing",
+      "paragraphs": [
+        "Use the current itinerary and the latest supplier confirmations. Where an amendment is unresolved, identify it as pending rather than treating a request as a confirmed service.",
+        "Keep a clear version date so the colleague doing the final check knows which document is intended for the client. A filename containing 'final' is not enough when several versions carry that label."
+      ]
+    },
+    {
+      "heading": "Compare the details that affect delivery",
+      "paragraphs": [
+        "Start with travel dates, hotel nights, traveller numbers and room arrangements. Then compare transport sectors, pickup times, meeting points and the scope of sightseeing services.",
+        "Look for meaningful differences rather than identical wording. 'Airport transfer' and 'private arrival transfer' might describe the same booking, but they might also conceal an assumption about exclusivity that needs confirmation."
+      ]
+    },
+    {
+      "heading": "Follow one amendment through the whole trip",
+      "paragraphs": [
+        "Suppose a hotel moves to another part of the city. The accommodation section may be updated while the pickup address, arrival instructions and suggested evening programme still refer to the original location.",
+        "Check every section affected by the change. The same approach applies when a flight changes, a rail sector is replaced or a guided visit moves to another day."
+      ]
+    },
+    {
+      "heading": "Separate an inclusion from a suggestion",
+      "paragraphs": [
+        "A named attraction can appear in a programme without its ticket being included. A restaurant recommendation can be mistaken for a meal reservation if the wording is vague.",
+        "Make booked services, optional activities and independent suggestions easy to distinguish. The client should not have to infer payment responsibility from the layout of the page."
+      ]
+    },
+    {
+      "heading": "Hand over the unresolved points clearly",
+      "paragraphs": [
+        "Some details may still depend on a supplier update. Give those points a clear owner and a next action rather than burying them in a general disclaimer.",
+        "Use AI-assisted review to help identify contradictions in the itinerary, but check the actual confirmations yourself. A review cannot establish that a booking exists merely because the document says it does."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "https://app.touraudit.com",
+      "label": "Try the TourAudit free pilot"
+    },
+    {
+      "href": "/what-touraudit-reviews",
+      "label": "What TourAudit reviews"
+    }
+  ]
+},
+"prioritise-itinerary-review-findings": {
+  "title": "Which Itinerary Findings Should You Fix First?",
+  "seoTitle": "How to Prioritise Itinerary Review Findings | TourAudit",
+  "description": "Separate operational problems, questions to verify and optional improvements so an itinerary review leads to useful decisions.",
+  "category": "Professional judgment",
+  "readTime": "4 min read",
+  "publishDate": "2026-12-04T09:00:00+05:30",
+  "intro": [
+    "An itinerary review is useful when it helps a consultant decide what to do next. A long list of observations can have the opposite effect if a missed transfer and a minor wording suggestion receive the same attention.",
+    "The first step is to judge each finding against the itinerary, the booking stage and what you already know about the client."
+  ],
+  "sections": [
+    {
+      "heading": "Deal with problems that could prevent the trip from working",
+      "paragraphs": [
+        "Start with contradictions and gaps that affect service delivery: an overnight stay that does not match the hotel allocation, a departure that conflicts with another booking, or an essential transfer with no workable arrangement.",
+        "Confirm the evidence before changing the plan. If a review claims the night count is wrong, total the stays yourself. A confident explanation is not a substitute for a correct calculation."
+      ]
+    },
+    {
+      "heading": "Put important uncertainties in a verification list",
+      "paragraphs": [
+        "Some observations depend on information that may have changed or is not included in the document. Opening arrangements, access restrictions and service conditions may need confirmation from the relevant operator.",
+        "Turn the observation into a specific question. 'Check the attraction' is less useful than identifying the intended visit date and the particular operating detail that needs confirmation. Do not present an unverified concern as an established error."
+      ]
+    },
+    {
+      "heading": "Judge improvements against the client's priorities",
+      "paragraphs": [
+        "A faster route is not automatically a better route. The client may have requested a stop, preferred a particular hotel or accepted a demanding day to see a priority attraction.",
+        "Consider whether a suggestion improves this client's trip. If it removes something they value, there should be a clear reason to recommend it."
+      ]
+    },
+    {
+      "heading": "Do not add information just to satisfy the review",
+      "paragraphs": [
+        "A proposal and an operational handover serve different purposes. A missing driver contact in an early proposal may be entirely normal; a missing arrangement that prevents a confirmed transfer from working is a different matter.",
+        "Add detail when it helps the reader make a decision or complete the journey. Avoid expanding the itinerary with generic warnings that distract from the points requiring action."
+      ]
+    },
+    {
+      "heading": "Finish with decisions, not an untouched findings list",
+      "paragraphs": [
+        "For each important observation, record a useful outcome: correct the itinerary, clarify the wording, ask the supplier, explain the limitation to the client, or accept the arrangement for a documented reason.",
+        "TourAudit's observations support that process. They remain advisory, and the consultant makes the final decision using the booking evidence, current information and the traveller's needs."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "https://app.touraudit.com",
+      "label": "Try the TourAudit free pilot"
+    },
+    {
+      "href": "/what-touraudit-reviews",
+      "label": "What TourAudit reviews"
+    }
+  ]
+}
 };

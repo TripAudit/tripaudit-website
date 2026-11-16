@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getPublishedUpdates } from "./updates/update-data";
 import { articles } from "./insights/article-data";
 import { isArticlePublished } from "./insights/publication";
 
@@ -13,16 +14,11 @@ const routes = [
   "/faq",
   "/contact",
   "/privacy",
+  "/subscription-refund-policy",
   "/insights",
   "/updates",
 ];
 
-const updatePages = [
-  {
-    route: "/updates/free-pilot-itinerary-review",
-    published: "2026-11-10",
-  },
-];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = routes.map((route) => ({ url: `https://www.touraudit.com${route}` }));
@@ -33,9 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(article.publishDate ? { lastModified: new Date(article.publishDate) } : {}),
     }));
 
-  const updates = updatePages.map((update) => ({
-    url: `https://www.touraudit.com${update.route}`,
-    lastModified: new Date(update.published),
+  const updates = getPublishedUpdates().map((update) => ({
+    url: `https://www.touraudit.com${update.href}`,
+    lastModified: new Date(update.publishDate),
   }));
 
   return [...pages, ...updates, ...insightPages];
