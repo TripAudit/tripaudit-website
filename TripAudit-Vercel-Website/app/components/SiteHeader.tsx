@@ -23,6 +23,7 @@ export default function SiteHeader() {
         <Link href="/what-touraudit-reviews">What it reviews</Link>
         <Link href="/why-touraudit">Why TourAudit?</Link>
         <Link href="/insights">Insights</Link>
+        <a href={`${APP_URL}/subscription`}>Professional</a>
         <Link href="/about">About</Link>
         <Link href="/faq">FAQ</Link>
         <Link href="/contact">Contact</Link>
@@ -46,6 +47,7 @@ export default function SiteHeader() {
         <Link href="/how-it-works" onClick={closeMenu}>How It Works</Link>
         <Link href="/what-touraudit-reviews" onClick={closeMenu}>What TourAudit Reviews</Link>
         <Link href="/why-touraudit" onClick={closeMenu}>Why TourAudit?</Link>
+        <a href={`${APP_URL}/subscription`} onClick={closeMenu}>Professional</a>
         <Link href="/about" onClick={closeMenu}>About</Link>
         <Link href="/faq" onClick={closeMenu}>FAQ</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
