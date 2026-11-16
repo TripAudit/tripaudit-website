@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { getPublishedUpdates } from "./update-data";
+
+export const dynamic = "force-dynamic";
 import Link from "next/link";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
@@ -15,16 +18,9 @@ export const metadata: Metadata = {
   },
 };
 
-const updates = [
-  {
-    date: "10 November 2026",
-    title: "TourAudit’s free pilot introduces a structured second check for travel itineraries",
-    description: "Travel professionals can submit an itinerary for an advisory operational review before sending it to a client.",
-    href: "/updates/free-pilot-itinerary-review",
-  },
-];
 
 export default function UpdatesPage() {
+  const updates = getPublishedUpdates();
   return (
     <main className="insights-page">
       <SiteHeader />
