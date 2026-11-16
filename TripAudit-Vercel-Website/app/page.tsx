@@ -39,6 +39,20 @@ export default function Home() {
         <div><p className="section-lead">A flight can be confirmed, a hotel can be booked and every date can match, yet the complete itinerary may still create a poor client experience.</p><p>Proofreading asks whether the document reads correctly. Itinerary quality control asks whether the journey works. Is there enough time after arrival? Do the services connect logically? Are important details missing? Does the programme match what the client has been promised?</p><p>TourAudit brings these questions into one pre-send review. The consultant keeps control of every final decision.</p><p><Link className="text-link" href="/why-touraudit">See how TourAudit differs from general AI tools <Arrow /></Link></p></div>
       </section>
 
+      <section className="section intro" id="professional" aria-labelledby="professional-heading">
+        <div>
+          <p className="eyebrow">TourAudit Professional</p>
+          <h2 id="professional-heading">Need to review itineraries regularly?</h2>
+        </div>
+        <div>
+          <p className="section-lead">50 itinerary reviews for US$5, valid for 30 days from manual activation.</p>
+          <p>Sign in with Google to request your plan. We send a payment link manually and activate your allowance after verifying payment. Unused credits expire after 30 days.</p>
+          <p>Payment and renewal are manual. There are no automatic charges. The free pilot remains available without Google sign-in.</p>
+          <p><a className="button" href="https://app.touraudit.com/subscription">View Professional plan <Arrow /></a></p>
+          <p><Link className="text-link" href="/subscription-refund-policy">Subscription and refund policy <Arrow /></Link></p>
+        </div>
+      </section>
+
       <section className="value-grid">
         <article><b>01</b><h3>Find gaps sooner</h3><p>Spot missing traveller ages, unclear rooming, incomplete transport details and vague inclusions before they lead to confusion.</p></article>
         <article><b>02</b><h3>Question the timing</h3><p>Look again at rushed arrival days, tight connections, back-to-back activities and plans with little margin for real travel conditions.</p></article>
