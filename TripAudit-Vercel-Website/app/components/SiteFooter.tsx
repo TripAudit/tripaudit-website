@@ -23,6 +23,7 @@ export default function SiteFooter({ className = "" }: { className?: string }) {
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
         <Link href="/privacy">Privacy information</Link>
+        <Link href="/subscription-refund-policy">Subscription and refund policy</Link>
       </div>
       <div>
         <strong>Product</strong>
