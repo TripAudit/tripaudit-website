@@ -13,6 +13,7 @@ const routes = [
   "/faq",
   "/contact",
   "/privacy",
+  "/subscription-refund-policy",
   "/insights",
   "/updates",
 ];
