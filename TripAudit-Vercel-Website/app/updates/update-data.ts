@@ -6,7 +6,16 @@ export const professionalUpdate = {
   href: "/updates/touraudit-professional",
 };
 
+export const directReviewUpdate = {
+  date: "17 November 2026",
+  publishDate: "2026-11-17T09:00:00+05:30",
+  title: "TourAudit introduces a more direct AI itinerary-review process",
+  description: "TourAudit now reviews submitted itinerary text directly, focusing its advisory review on operational concerns without a separate extraction stage.",
+  href: "/updates/direct-ai-itinerary-review",
+};
+
 export const updates = [
+  directReviewUpdate,
   professionalUpdate,
   {
     date: "10 November 2026",
