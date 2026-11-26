@@ -4,6 +4,12 @@ import { formatPublishDate, isArticlePublished } from "./publication";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
+function isArticleLinkAvailable(href: string) {
+  if (!href.startsWith("/insights/")) return true;
+  const destination = articles[href.slice("/insights/".length)];
+  return Boolean(destination && isArticlePublished(destination));
+}
+
 export default function ArticlePage({ article }: { article: Article }) {
   const publishDate = formatPublishDate(article.publishDate);
   const currentSlug = Object.entries(articles).find(([, candidate]) => candidate === article)?.[0];
@@ -27,7 +33,7 @@ export default function ArticlePage({ article }: { article: Article }) {
           <h2>{section.heading}</h2>
           {section.paragraphs?.map((p) => <p key={p}>{p}</p>)}
           {section.bullets && <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
-          {section.link && <p><Link className="text-link" href={section.link.href}>{section.link.label}</Link></p>}
+          {section.link && isArticleLinkAvailable(section.link.href) && <p><Link className="text-link" href={section.link.href}>{section.link.label}</Link></p>}
         </section>)}
         {article.related && <nav className="related-reading" aria-label="Related reading">
           <h2>Related reading</h2>
@@ -48,8 +54,8 @@ export default function ArticlePage({ article }: { article: Article }) {
         <aside className="article-cta">
           <p className="eyebrow">Review before you send</p>
           <h2>Add a structured second check to your workflow.</h2>
-          <p>TourAudit helps surface potential gaps, conflicts and practical concerns while destination knowledge, live verification and professional judgment stay with you.</p>
-          <a className="button" href="https://app.touraudit.com">Review an itinerary <span aria-hidden="true">→</span></a>
+          <p>{article.cta ?? "TourAudit helps surface potential gaps, conflicts and practical concerns while destination knowledge, live verification and professional judgment stay with you."}</p>
+          <a className="button" href="https://app.touraudit.com/">{article.cta ? "Review an itinerary with TourAudit" : "Review an itinerary"} <span aria-hidden="true">→</span></a>
         </aside>
       </div>
     </article>
