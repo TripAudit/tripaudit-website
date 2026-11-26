@@ -1,7 +1,8 @@
 import { scheduledArticles } from "./scheduled-articles";
+import { decemberArticles } from "./december-articles";
 
 export type ArticleSection = { heading: string; paragraphs?: string[]; bullets?: string[]; link?: { href: string; label: string } };
-export type Article = { title: string; seoTitle: string; description: string; category: string; readTime: string; publishDate?: string; intro: string[]; sections: ArticleSection[]; related?: { href: string; label: string }[] };
+export type Article = { title: string; seoTitle: string; description: string; category: string; readTime: string; publishDate?: string; intro: string[]; sections: ArticleSection[]; related?: { href: string; label: string }[]; cta?: string };
 
 export const articles: Record<string, Article> = {
   "interlaken-spiez-train-connection-example": {
@@ -99,5 +100,6 @@ export const articles: Record<string, Article> = {
       { heading: "A better practicality test", bullets: ["Is the sequence sensible?", "Is there enough time around each service?", "Does the effort suit these travellers?", "Is there flexibility when something runs late?", "Does the programme match the holiday promise?", "Have important limitations been explained?"], paragraphs: ["A strong itinerary offers smooth flow, realistic breaks and correct expectations. TourAudit helps identify potential conflicts, operational gaps and missing information; its findings support—not replace—the consultant’s current knowledge and professional judgement."] }
     ]
   },
-  ...scheduledArticles
+  ...scheduledArticles,
+  ...decemberArticles,
 };
