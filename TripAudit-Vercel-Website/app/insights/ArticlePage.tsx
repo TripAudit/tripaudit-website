@@ -27,6 +27,7 @@ export default function ArticlePage({ article }: { article: Article }) {
           <h2>{section.heading}</h2>
           {section.paragraphs?.map((p) => <p key={p}>{p}</p>)}
           {section.bullets && <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+          {section.link && <p><Link className="text-link" href={section.link.href}>{section.link.label}</Link></p>}
         </section>)}
         {article.related && <nav className="related-reading" aria-label="Related reading">
           <h2>Related reading</h2>
