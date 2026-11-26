@@ -4,6 +4,40 @@ export type ArticleSection = { heading: string; paragraphs?: string[]; bullets?:
 export type Article = { title: string; seoTitle: string; description: string; category: string; readTime: string; publishDate?: string; intro: string[]; sections: ArticleSection[]; related?: { href: string; label: string }[] };
 
 export const articles: Record<string, Article> = {
+  "interlaken-spiez-train-connection-example": {
+    title: "Worked Itinerary Review: A Tight Train Connection at Spiez",
+    seoTitle: "Interlaken to Spiez Train Connection: Worked Itinerary Review | TourAudit",
+    description: "See how a travel consultant checks a 14:00 Interlaken pickup against a 14:10 train from Spiez and what to confirm before changing the itinerary.",
+    category: "Worked examples",
+    readTime: "3 min read",
+    publishDate: "2026-11-26",
+    intro: ["A 14:00 pickup in Interlaken leaves only ten minutes before a 14:10 train departs from Spiez. That window has to cover the road transfer, getting out with luggage and reaching the platform before departure. A consultant should flag the connection and confirm an earlier pickup or a later train before presenting it as workable."],
+    sections: [
+      {
+        heading: "Original timing in the benchmark",
+        paragraphs: ["This example uses a sanitised TourAudit review benchmark. The times below are reproduced from the sample itinerary. Verify current services for the actual travel date."],
+        bullets: ["14:00 pickup in Interlaken.", "14:10 train departure from Spiez.", "Total time between pickup and scheduled departure: ten minutes."],
+      },
+      {
+        heading: "Where the connection breaks down",
+        paragraphs: ["The two times refer to different places. The travellers still have to leave the pickup point, reach Spiez station, unload their luggage and get to the departure platform. They need to be ready to board before 14:10. The itinerary leaves no credible allowance for all those steps and gives no confirmed transfer duration to support the connection."],
+      },
+      {
+        heading: "What a consultant would change",
+        paragraphs: ["If the 14:10 train is fixed, work backwards from the time the group should be at the platform. Confirm the road transfer and station access, then move the pickup earlier and allow a buffer for delays. If the pickup is fixed, check a later train and review any onward booking affected by the revised arrival time."],
+      },
+      {
+        heading: "What needs independent verification",
+        bullets: ["Rail operator: confirm the departure for the actual travel date, any disruption, and ticket or reservation conditions for the proposed train.", "Transfer supplier: confirm the pickup address, availability for the revised time, estimated drive time and station drop-off point.", "Station and traveller details: check walking or step-free access, luggage needs, and any assistance or extra boarding time the group requires."],
+        paragraphs: ["Update the client itinerary and supplier instructions once the revised arrangements are confirmed. Mark any detail still awaiting confirmation."],
+      },
+    ],
+    related: [
+      { href: "/insights/train-connections-beyond-timetable", label: "How to check a train connection beyond the timetable" },
+      { href: "/insights/how-to-review-a-travel-itinerary-before-sending", label: "Follow the full pre-send itinerary review guide" },
+      { href: "/what-touraudit-reviews", label: "See what TourAudit reviews" },
+    ],
+  },
   "how-to-review-a-travel-itinerary-before-sending": {
     title: "How to Review a Travel Itinerary Before Sending It to a Client",
     seoTitle: "How to Review a Travel Itinerary Before Sending It | TourAudit",
