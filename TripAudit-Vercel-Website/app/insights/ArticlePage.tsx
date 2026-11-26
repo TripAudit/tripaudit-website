@@ -37,7 +37,10 @@ export default function ArticlePage({ article }: { article: Article }) {
         </section>)}
         {article.related && <nav className="related-reading" aria-label="Related reading">
           <h2>Related reading</h2>
-          {article.related.map((item) => <Link key={item.href} href={item.href}>{item.label} →</Link>)}
+          {article.related
+            .filter((item) => item.href.replace(/\/$/, "") !== "https://app.touraudit.com")
+            .filter((item) => isArticleLinkAvailable(item.href))
+            .map((item) => <Link key={item.href} href={item.href}>{item.label} →</Link>)}
         </nav>}
         <section className="more-insights" aria-labelledby="more-insights-heading">
           <div className="more-insights-heading">
@@ -55,7 +58,7 @@ export default function ArticlePage({ article }: { article: Article }) {
           <p className="eyebrow">Review before you send</p>
           <h2>Add a structured second check to your workflow.</h2>
           <p>{article.cta ?? "TourAudit helps surface potential gaps, conflicts and practical concerns while destination knowledge, live verification and professional judgment stay with you."}</p>
-          <a className="button" href="https://app.touraudit.com/">{article.cta ? "Review an itinerary with TourAudit" : "Review an itinerary"} <span aria-hidden="true">→</span></a>
+          <a className="button" href="https://app.touraudit.com/">Review an itinerary with TourAudit <span aria-hidden="true">→</span></a>
         </aside>
       </div>
     </article>
